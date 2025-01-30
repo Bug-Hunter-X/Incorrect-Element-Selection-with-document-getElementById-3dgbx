@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Incorrectly referencing an element by ID
+    const myElement = document.getElementById('myDiv p'); //Error: this selector is not valid
+
+    myElement.style.color = 'blue';
+  </script>
+</body>
+</html>
