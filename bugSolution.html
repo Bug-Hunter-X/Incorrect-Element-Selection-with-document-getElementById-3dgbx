@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p id="myParagraph">This is some text.</p>
+  </div>
+
+  <script>
+    // Correctly selecting the nested element.
+    const myDiv = document.getElementById('myDiv');
+    const myParagraph = myDiv.querySelector('#myParagraph');
+    myParagraph.style.color = 'blue';
+  </script>
+</body>
+</html>
